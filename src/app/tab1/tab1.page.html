@@ -1,17 +1,59 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 1
+      Conheça o Rio de janeiro
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 1</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <ion-card>
+    <ion-img src="assets\rio.png"></ion-img>
+    <ion-card-header>
+      <ion-card-title>Terra Maravilhosa</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content class="ion-text-justify">
+      Aqui no Rio vocês encontram praias, parques, bareres, e restaurantes espetaculares
+      para poderem aproveitar ao maximo essa cidade maravilhosa!
+      
+    </ion-card-content>
+  </ion-card>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+ <ion-card>
+
+  <ion-card-header>
+    <ion-card-title>Segmentos</ion-card-title>
+  </ion-card-header>
+
+
+  <ion-item href="http://www.turismo.rj.gov.br/">
+    <ion-icon name="leaf" slot="start"></ion-icon>
+    <ion-label>Agroturismo</ion-label>
+  </ion-item>
+
+  <ion-item href="http://www.turismo.rj.gov.br/">
+    <ion-icon name="bicycle" slot="start"></ion-icon>
+    <ion-label>Aventura</ion-label>
+  </ion-item>
+
+
+  <ion-item href="http://www.turismo.rj.gov.br/">
+    <ion-icon name="wine" slot="start"></ion-icon>
+    <ion-label>Ecoturismo</ion-label>
+  </ion-item>
+
+  <ion-item href="http://www.turismo.rj.gov.br/">
+    <ion-icon name="walk" slot="start"></ion-icon>
+    <ion-label>Parques</ion-label>
+  </ion-item>
+
+  <ion-item href="http://www.turismo.rj.gov.br/">
+    <ion-icon name="sunny" slot="start"></ion-icon>
+    <ion-label>Praias</ion-label>
+  </ion-item>
+
+ </ion-card>
+
+
 </ion-content>
