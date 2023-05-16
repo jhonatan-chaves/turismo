@@ -1,12 +1,14 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title>
-      Tab 2
+      Praias Rio de janeiro
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
+ 
+ <!--
   <ion-list>
   <swiper-container>
     <swiper-slide>slide 1</swiper-slide>
@@ -14,4 +16,276 @@
     <swiper-slide>slide 3</swiper-slide>
   </swiper-container>
   </ion-list>
+-->
+<ion-list>
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://static.wixstatic.com/media/358476_f04a856429b5470abd731584f05b2557~mv2_d_3000_2000_s_2.jpg/v1/fill/w_640,h_426,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/358476_f04a856429b5470abd731584f05b2557~mv2_d_3000_2000_s_2.jpg" alt="">
+      </ion-thumbnail >
+      
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Copacabana</h2>
+        </ion-text>
+        <p>Rio de Janeiro</p>
+      </ion-label>
+      <ion-note slot="end">centro</ion-note>
+    </ion-item>
+    <ion-item-options side="start">
+     
+      <ion-item-option color="danger"> <ion-icon name="trash-bin-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://riotur.rio/que_fazer/copacabana-e-leme/')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://vejario.abril.com.br/wp-content/uploads/2023/03/47092254321_59375ccdbe_k.jpg?quality=70&strip=info&w=1280&h=720&crop=1" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Ipanema</h2>
+        </ion-text>
+        <p>Rio de Janeiro</p>
+      </ion-label>
+      <ion-note>Zona Sul</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.hoteis.com/go/brasil/praia-de-ipanema-rio-de-janeiro')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>
+  </ion-item-sliding>
+
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://s2rio.com.br/wp-content/uploads/2020/01/leme-rio-de-janeiro-2-1024x576.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia do Leme</h2>
+        </ion-text>
+        <p>Rio de janeiro</p>
+      </ion-label>
+      <ion-note slot="end">Zona Sul</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.tevejopelomundo.com.br/praia-do-leme-rio-de-janeiro/')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://rio.temporadacopacabana.com.br/wp-content/uploads/2021/02/praia-da-reserva1-e1613583436879.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia da Reserva</h2>
+        </ion-text>
+        <p>Rio de janeiro</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.viajali.com.br/praia-da-reserva/#:~:text=Localizada%20na%20Barra%20da%20Tijuca,L%C3%BAcio%20Costa%20sentido%20Recreio.')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://www.tevejopelomundo.com.br/wp-content/uploads/2020/07/praia-de-grumari.jpeg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia de Grumari</h2>
+        </ion-text>
+        <p>Rio de janeiro</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://casalnomade.com/praia-de-grumari-conheca-uma-das-melhores-praias-do-rio/')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/09/b1/30/92/photo0jpg.jpg?w=1200&h=-1&s=1" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia de Joatinga</h2>
+        </ion-text>
+        <p>Rio de janeiro</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://descobertasbarbaras.com.br/praia-da-joatinga-nao-va-antes-de-ler-esse-post/')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://deixadefrescura.com/wp-content/uploads/2020/08/praia-do-sossego-piratininga-niteroi-como-chegar.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia do Sossego</h2>
+        </ion-text>
+        <p>Niterói - RJ</p>
+      </ion-label>
+      <ion-note slot="end">Centro</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('http://www.niteroi.rj.gov.br/2021/10/01/praia-do-sossego-em-niteroi-e-a-primeira-da-cidade-a-ser-contemplada-com-a-bandeira-azul/#:~:text=Prefeitura%20de%20Niter%C3%B3i-,Praia%20do%20Sossego%20em%20Niter%C3%B3i%20%C3%A9%20a%20primeira%20da%20cidade,contemplada%20com%20a%20Bandeira%20Azul&text=Um%20dos%20mais%20belos%20recantos,internacional%20de%20sustentabilidade%20Bandeira%20Azul.')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://tudorondonia.com/uploads/10-04-18-zhd0mha9p1707yy.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia do Farol</h2>
+        </ion-text>
+        <p>Arraial do Cabo - RJ</p>
+      </ion-label>
+      <ion-note slot="end">Zona Sul</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://guia.melhoresdestinos.com.br/praia-do-farol-190-5118-l.html')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://loucosporpraia.com.br/wp-content/uploads/2013/06/Praia-do-Forno-Arraial-do-Cabo-por-Carlos-Maia-Klayn.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia do Forno</h2>
+        </ion-text>
+        <p>Arraial do Cabo - RJ</p>
+      </ion-label>
+      <ion-note slot="end">Zona Norte</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://guia.melhoresdestinos.com.br/praia-do-forno-190-5114-l.html')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://www.tevejopelomundo.com.br/wp-content/uploads/2019/03/praia-brava-arraial-do-cabo.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia Brava</h2>
+        </ion-text>
+        <p>Arraial do Cabo - RJ</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://guia.melhoresdestinos.com.br/praia-brava-190-5120-l.html')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://apureguria.com/wp-content/uploads/2019/03/dicas-para-visitar-ilha-do-japon%C3%AAs-rio-de-janeiro.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Ilha do Japonês</h2>
+        </ion-text>
+        <p>Cabo Frio - RJ</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://turismo.cabofrio.rj.gov.br/ilha-do-japones/')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcf-O1HfInJX3X-yattZ77XGWym0u_01seSw&usqp=CAU" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia Lopes Mendes</h2>
+        </ion-text>
+        <p>Angra dos Reis - RJ</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://www.ilhagrande.com.br/praias/lopes-mendes/')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+  
+  <ion-item-sliding>
+    <ion-item>
+      <ion-thumbnail slot="start">
+        <img src="https://i0.wp.com/euamoparaty.com.br/wp-content/uploads/2016/06/trindade_new-29.jpg" alt="">
+      </ion-thumbnail>
+      <ion-label>
+        <ion-text color="primary">
+          <h2>Praia do Cachadaço</h2>
+        </ion-text>
+        <p>Paraty - RJ</p>
+      </ion-label>
+      <ion-note slot="end">Zona Oeste</ion-note>
+    </ion-item>
+    <ion-item-options side="end">
+      <ion-item-option (click)="openSite('https://guia.melhoresdestinos.com.br/praia-do-cachadaco-192-5266-l.html')"><ion-icon name="alert-circle-outline"></ion-icon></ion-item-option>
+      <ion-item-option  (click)="like()" color="success"><ion-icon name="star-outline" ></ion-icon></ion-item-option>
+    </ion-item-options>    
+  </ion-item-sliding>
+
+
+</ion-list>
+
 </ion-content>
